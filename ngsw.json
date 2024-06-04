@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1717514797882,
+  "index": "/pwa-carla/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pwa-carla/chunk-4BYBNS7C.js",
+        "/pwa-carla/chunk-LCR6M4MH.js",
+        "/pwa-carla/favicon.ico",
+        "/pwa-carla/index.html",
+        "/pwa-carla/main-A2Q5KTRE.js",
+        "/pwa-carla/manifest.webmanifest",
+        "/pwa-carla/polyfills-A7MJM4D4.js",
+        "/pwa-carla/styles-5DFMJLFG.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pwa-carla/assets/css/animate.css",
+        "/pwa-carla/assets/icons/icon-128x128.png",
+        "/pwa-carla/assets/icons/icon-144x144.png",
+        "/pwa-carla/assets/icons/icon-152x152.png",
+        "/pwa-carla/assets/icons/icon-192x192.png",
+        "/pwa-carla/assets/icons/icon-384x384.png",
+        "/pwa-carla/assets/icons/icon-512x512.png",
+        "/pwa-carla/assets/icons/icon-72x72.png",
+        "/pwa-carla/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "images-api",
+      "patterns": [
+        "https:\\/\\/api\\.pokemontcg\\.io\\/v1\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/pwa-carla/assets/css/animate.css": "1d5c16e4a56f56ceeff595897da8673875104012",
+    "/pwa-carla/assets/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/pwa-carla/assets/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/pwa-carla/assets/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/pwa-carla/assets/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/pwa-carla/assets/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/pwa-carla/assets/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/pwa-carla/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/pwa-carla/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/pwa-carla/chunk-4BYBNS7C.js": "e621cb786efd71d3382ad699c4014aaf72b122ab",
+    "/pwa-carla/chunk-LCR6M4MH.js": "e408957462edf7e256e1c0ef7d2b7402ff5a588f",
+    "/pwa-carla/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/pwa-carla/index.html": "e8e39b8d1bd697f8fcee00edc99ca24517db445c",
+    "/pwa-carla/main-A2Q5KTRE.js": "ead75fae2537a3f2bb789c3f010cadcda4966ebc",
+    "/pwa-carla/manifest.webmanifest": "c36d4bdae200637031ca8a614b0138006854e6e4",
+    "/pwa-carla/polyfills-A7MJM4D4.js": "547053781d5952561abe68a51cc6c1a2b1b51c55",
+    "/pwa-carla/styles-5DFMJLFG.css": "6d2642b20c1ccda7a83752f015cc3643c0ed3ada"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
