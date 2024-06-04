@@ -1,0 +1,30 @@
+<div class="container">
+  <div *ngIf="card" class="animate__animated animate__bounce animate__fadeIn">
+    <div>
+      <div class="card__header">
+        <h1>{{ card.name }}</h1>
+        <button mat-flat-button color="primary" routerLink="/">Back</button>
+      </div>
+
+      <button
+        mat-raised-button
+        (click)="showDetails()"
+        style="margin-bottom: 50px"
+      >
+        Show all details
+      </button>
+
+      <mat-tab-group *ngIf="showTab">
+        <mat-tab label="Identifier"
+          ><p>{{ card.id }}</p></mat-tab
+        >
+        <mat-tab label="National Pokedex Number"
+          ><p>
+            {{ card.nationalPokedexNumber }}
+          </p></mat-tab
+        >
+        <mat-tab label="Card"><img src="{{ card.imageUrl }}" alt="" /></mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="container">
+  <h1>Pokemon cards</h1>
+
+  <div style="text-align: right">
+    <button mat-fab (click)="gridView()">
+      <mat-icon>grid_on</mat-icon>
+    </button>
+    <button mat-fab style="margin-left: 10px" (click)="cardView()">
+      <mat-icon>list</mat-icon>
+    </button>
+  </div>
+
+  <ng-container *ngIf="isLoading; else contentTemplate">
+    <div class="spinner-container">
+      <mat-spinner></mat-spinner>
+    </div>
+  </ng-container>
+
+  <ng-template #contentTemplate>
+    <div
+      *ngIf="grid"
+      class="animate__animated animate__bounce animate__fadeIn"
+      style="margin-top: 30px"
+    >
+      <app-grid [dataSource]="cards"></app-grid>
+    </div>
+
+    <div *ngIf="!grid">
+      <ul style="padding: 0; margin-top: 30px">
+        <a
+          style="text-decoration: none; color: black"
+          *ngFor="let card of cards"
+          [routerLink]="['/card', card.id]"
+          class="animate__animated animate__bounce animate__fadeIn"
+        >
+          <app-card [card]="card"></app-card>
+        </a>
+      </ul>
+    </div>
+  </ng-template>
+</div>
